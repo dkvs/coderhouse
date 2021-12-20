@@ -1,0 +1,157 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+body {
+    background-color: rgb(243, 239, 232);
+}
+
+
+.header {
+    width: 90%;
+    position: sticky;
+    top: 0;
+    background-color: rgb(243, 239, 232);
+    width: 90%;
+	margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, auto);
+    grid-template-areas: 
+        "title title title title"
+        "menu menu menu menu";
+    gap: 10px;
+}
+
+.menu{
+    grid-area: menu;
+    text-align: center;
+}
+
+.menuLink {
+    color: black;
+}
+
+.title {
+    grid-area: title;
+    text-align: center;
+}
+
+li {
+    display: inline;
+    list-style: none;
+    margin: 6px;
+    padding: 8px;
+}
+
+a {
+ text-decoration: none;
+}
+
+.blanca {
+    width: 90%;
+    position: sticky;
+    top: 0;
+    background-color: rgb(243, 239, 232);
+    width: 90%;
+	margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(4, auto);
+    grid-template-areas: 
+        "title-section title-section title-section title-section"
+        "product-blanca product-blanca product-blanca product-blanca"
+        "title title title title"
+        "tabla tabla tabla tabla";
+    gap: 10px;
+}
+
+.title-section {
+    grid-area: title-section;
+}
+
+
+.product-blanca {
+    grid-area: product-blanca;
+}
+
+
+.title {
+    grid-area: title;
+}
+
+.tabla {
+    grid-area: tabla;
+}
+
+.blrojaanca {
+    width: 90%;
+    position: sticky;
+    top: 0;
+    background-color: rgb(243, 239, 232);
+    width: 90%;
+	margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(4, auto);
+    grid-template-areas: 
+        "title-section title-section title-section title-section"
+        "product-roja product-roja product-roja product-roja"
+        "title title title title"
+        "tablar tablar tablar tablar";
+    gap: 10px;
+}
+
+.title-section {
+    grid-area: title-section;
+}
+
+
+.product-roja {
+    grid-area: product-roja;
+}
+
+
+.title {
+    grid-area: title;
+}
+
+.tablar {
+    grid-area: tablar;
+}
+
+.footer{
+    width: 90%;
+	margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, auto);
+    grid-template-areas: 
+        "menu-footer menu-footer menu-footer menu-footer"
+        "desarrollo desarrollo desarrollo desarrollo";
+    gap: 10px;
+}
+
+
+footer {
+    color: blanchedalmond;
+    background-color: rgba(0, 0, 0, 0.801);
+    padding: 20px
+}
+
+.menu-footer {
+    grid-area: menu-footer;
+    padding-bottom: 40px;
+}
+
+.desarrollo {
+    grid-area: desarrollo;
+}
+
+
+.footerLink {
+    color: blanchedalmond;
+}

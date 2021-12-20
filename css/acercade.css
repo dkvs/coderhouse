@@ -1,0 +1,141 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+.contenedor {
+    width: 90%;
+    background-color: rgb(247, 243, 243);
+    width: 90%;
+	margin: 20px auto;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(1, auto);
+    grid-template-areas: 
+        "texto-nosotros imagen";
+    gap: 10px;
+}
+
+body {
+    background-color: rgb(243, 239, 232);
+}
+
+.texto-nosotros{
+    grid-area: texto-nosotros;
+}
+
+.imagen{
+    grid-area: imagen;
+}
+
+.title{
+    grid-area: title;
+    text-align: center;
+}
+
+.menu{
+    grid-area: menu;
+    text-align: center;
+}
+
+li {
+    display: inline;
+    list-style: none;
+    margin: 6px;
+    padding: 8px;
+}
+
+a {
+ text-decoration: none;
+}
+
+
+.menuLink {
+    color: black;
+}
+
+
+
+
+.footer {
+    grid-area: footer;
+}
+
+.title-section {
+    color: black;
+    font-size: 28px;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 22px;
+    padding-left: 20px;
+    text-align: start;
+}
+
+
+
+.footer{
+    width: 90%;
+	margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, auto);
+    grid-template-areas: 
+        "menu-footer menu-footer menu-footer menu-footer"
+        "desarrollo desarrollo desarrollo desarrollo";
+    gap: 10px;
+}
+
+
+footer {
+    color: blanchedalmond;
+    background-color: rgba(0, 0, 0, 0.801);
+    padding: 20px
+}
+
+.menu-footer {
+    grid-area: menu-footer;
+    padding-bottom: 40px;
+}
+
+.desarrollo {
+    grid-area: desarrollo;
+}
+
+
+.footerLink {
+    color: blanchedalmond;
+}
+
+@media screen and (max-width: 768px) {
+
+    body{
+        padding-top:4px
+    }
+
+    .contenedor {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas: 
+            "texto-nosotros"
+            "imagen";
+        gap: 0.7px;
+    }
+
+    h1{
+        font-size: 1.5rem;
+    }
+
+    .texto-nosotros{
+        text-align: center;
+    }
+    .imagen{
+        text-align: center;
+
+    }
+
+
+
+}

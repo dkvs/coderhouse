@@ -1,0 +1,203 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+.header {
+    width: 90%;
+    position: sticky;
+    top: 0;
+    background-color: rgb(243, 239, 232);
+    width: 90%;
+	margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, auto);
+    grid-template-areas: 
+        "title title title title"
+        "menu menu menu menu";
+    gap: 10px;
+}
+
+body {
+    background-color: rgb(243, 239, 232);
+}
+
+.title{
+    grid-area: title;
+    text-align: center;
+}
+
+.menu{
+    grid-area: menu;
+    text-align: center;
+}
+
+li {
+    display: inline;
+    list-style: none;
+    margin: 6px;
+    padding: 8px;
+}
+
+a {
+ text-decoration: none;
+}
+
+
+.menuLink {
+    color: black;
+}
+
+.main{
+    width: 90%;
+	margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(4, auto);
+    grid-template-areas: 
+        "slider slider slider slider"
+        "carrousel carrousel carrousel carrousel"
+        "colecciones colecciones colecciones colecciones"
+         "footer footer footer footer";
+    gap: 10px;
+}
+
+.slider{
+    grid-area: slider;
+    text-align: center;
+}
+
+.slider img {
+    width:100%;
+}
+.carrousel {
+    grid-area: carrousel;
+}
+
+.productos{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    overflow:hidden;
+}
+
+.colecciones {
+    grid-area: colecciones;
+    
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.title-section {
+    color: black;
+    font-size: 28px;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 22px;
+    padding-left: 20px;
+    text-align: start;
+}
+
+.dif-colecc {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    overflow:hidden;
+
+}
+
+.footer{
+    width: 90%;
+	margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, auto);
+    grid-template-areas: 
+        "menu-footer menu-footer menu-footer menu-footer"
+        "desarrollo desarrollo desarrollo desarrollo";
+    gap: 10px;
+}
+
+
+footer {
+    color: blanchedalmond;
+    background-color: rgba(0, 0, 0, 0.801);
+    padding: 20px
+}
+
+.menu-footer {
+    grid-area: menu-footer;
+    padding-bottom: 40px;
+}
+
+.desarrollo {
+    grid-area: desarrollo;
+}
+
+
+.footerLink {
+    color: blanchedalmond;
+}
+
+@media screen and (max-width: 768px) {
+
+    .header {
+        width: 90%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas: 
+            "title title"
+            "menu menu";
+        gap: 0.7px;
+    }
+
+    .main {
+            gap: 0.7rem;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(4,auto);
+            grid-template-areas: 
+            "slider slider"
+            "carrousel carrousel"
+            "colecciones colecciones"
+             "footer footer";
+    }
+
+    h1{
+        font-size: 1.5rem;
+    }
+
+ç
+
+    .productos{
+        grid-area: productos;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .colecciones {
+        grid-area: colecciones;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .dif-colecc{
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .slider{
+        grid-area: slider;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        
+    }
+
+}
