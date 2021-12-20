@@ -24,7 +24,8 @@
 body {
     background-color: rgb(243, 239, 232);
 }
-
+    
+    
 .title{
     grid-area: title;
     text-align: center;
@@ -50,6 +51,22 @@ a {
 .menuLink {
     color: black;
 }
+
+
+
+.click:hover{
+	-webkit-animation: 0.7s click 1;
+}
+
+@-webkit-keyframes click{
+	25%, 75%{
+		-webkit-transform:scale(0.8);
+	}
+	50%{
+		-webkit-transform:scale(1.1);
+	}
+}
+
 
 .main{
     width: 90%;
@@ -88,6 +105,11 @@ a {
     grid-area: colecciones;
     
 }
+.secc:hover {
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+}
+
 
 .footer {
     grid-area: footer;
@@ -125,7 +147,8 @@ a {
 
 footer {
     color: blanchedalmond;
-    background-color: rgba(0, 0, 0, 0.801);
+    background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
     padding: 20px
 }
 
@@ -195,9 +218,7 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-wrap: wrap;
-
-        
+        flex-wrap: wrap;    
     }
 
 }
